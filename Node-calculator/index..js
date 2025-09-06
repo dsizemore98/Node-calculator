@@ -1,9 +1,9 @@
 const rs = require('readline-sync');
 
-// Valid operations
+
 const validOperations = ["+", "-", "*", "/"];
 
-// Ask for a valid operation
+
 function getOperation() {
     while (true) {
         let input = rs.question("What operation would you like to perform? (+, -, *, /): ");
@@ -15,7 +15,7 @@ function getOperation() {
     }
 }
 
-// Ask for a valid number
+
 function getNumber(promptText) {
     while (true) {
         let input = rs.question(promptText);
@@ -28,7 +28,7 @@ function getNumber(promptText) {
     }
 }
 
-// Perform calculation
+
 function calculate(operation, num1, num2) {
     if (operation === "+") return num1 + num2;
     if (operation === "-") return num1 - num2;
@@ -42,7 +42,7 @@ function calculate(operation, num1, num2) {
     }
 }
 
-// --- Program starts here ---
+
 const operation = getOperation();
 const num1 = getNumber("Please enter the first number: ");
 const num2 = getNumber("Please enter the second number: ");
